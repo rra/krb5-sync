@@ -1,7 +1,7 @@
 Source: krb5-sync
 Section: net
 Priority: optional
-Maintainer: Russ Allbery <rra@debian.org>
+Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends:
  debhelper (>= 11),
  libipc-run-perl,
