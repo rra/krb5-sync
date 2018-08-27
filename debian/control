@@ -27,7 +27,7 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
- krb5-admin-server (>= 1.9),
+ krb5-admin-server,
  krb5-sync-tools,
 Description: MIT Kerberos Active Directory synchronization plugin
  This plugin synchronizes passwords changed via kadmin or kpasswd to a
@@ -44,7 +44,7 @@ Architecture: any
 Multi-Arch: foreign
 Depends:
  libipc-run-perl,
- libnet-remctl-perl (>= 3.4),
+ libnet-remctl-perl,
  ${misc:Depends},
  ${perl:Depends},
  ${shlibs:Depends},
