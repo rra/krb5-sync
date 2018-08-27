@@ -1,4 +1,4 @@
-krb5-sync (3.1-2) UNRELEASED; urgency=medium
+krb5-sync (3.1-2) unstable; urgency=medium
 
   * Orphan the package (see #907366).
   * Move packaging repository to salsa.debian.org.
@@ -25,7 +25,7 @@ krb5-sync (3.1-2) UNRELEASED; urgency=medium
   * Refresh upstream signing key.
   * Run wrap-and-sort -ast.
 
- -- Russ Allbery <rra@debian.org>  Sun, 26 Aug 2018 17:52:39 -0700
+ -- Russ Allbery <rra@debian.org>  Sun, 26 Aug 2018 18:17:15 -0700
 
 krb5-sync (3.1-1) unstable; urgency=medium
 
