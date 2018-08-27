@@ -19,6 +19,3 @@ override_dh_auto_install:
 	dh_auto_install --parallel
 	rm debian/tmp/usr/lib/*/krb5/plugins/kadm5_hook/*.la
 	chmod 644 debian/tmp/usr/lib/*/krb5/plugins/kadm5_hook/*.so
-
-override_dh_builddeb:
-	dh_builddeb -- -Zxz
