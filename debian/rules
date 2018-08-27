@@ -3,6 +3,9 @@
 # Enable compiler hardening flags.
 export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow,+pie
 
+# Enable verbose test output.
+export C_TAP_VERBOSE = 1
+
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
@@ -16,9 +19,6 @@ override_dh_auto_install:
 	dh_auto_install --parallel
 	rm debian/tmp/usr/lib/*/krb5/plugins/kadm5_hook/*.la
 	chmod 644 debian/tmp/usr/lib/*/krb5/plugins/kadm5_hook/*.so
-
-override_dh_installchangelogs:
-	dh_installchangelogs NEWS
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
