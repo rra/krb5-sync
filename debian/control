@@ -15,8 +15,8 @@ Build-Depends:
 Rules-Requires-Root: no
 Standards-Version: 4.2.1
 Homepage: https://www.eyrie.org/~eagle/software/krb5-sync/
-Vcs-Browser: https://git.eyrie.org/?p=kerberos/krb5-sync.git
-Vcs-Git: https://git.eyrie.org/git/kerberos/krb5-sync.git -b debian/master
+Vcs-Git: https://salsa.debian.org/debian/krb5-sync.git -b debian/master
+Vcs-Browser: https://salsa.debian.org/debian/krb5-sync
 
 Package: krb5-sync-plugin
 Architecture: any
