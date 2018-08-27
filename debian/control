@@ -3,8 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Russ Allbery <rra@debian.org>
 Build-Depends:
- debhelper (>= 9),
- dh-autoreconf,
+ debhelper (>= 11),
  libipc-run-perl,
  libkrb5-dev,
  libldap2-dev,

@@ -9,13 +9,13 @@ export C_TAP_VERBOSE = 1
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
-	dh $@ --parallel --with autoreconf
+	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure --parallel -- --enable-reduced-depends \
+	dh_auto_configure -- --enable-reduced-depends \
 	    --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_install:
-	dh_auto_install --parallel
+	dh_auto_install
 	rm debian/tmp/usr/lib/*/krb5/plugins/kadm5_hook/*.la
 	chmod 644 debian/tmp/usr/lib/*/krb5/plugins/kadm5_hook/*.so
